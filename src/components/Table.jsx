@@ -6,8 +6,6 @@ const isSearched = (searchTerm) => (item) =>
 item.title.toLowerCase().includes(searchTerm.toLowerCase());
 
 function Table (props){
-    
-    
       const { list, onDismiss } =props;
       return (
         <div className="table">
