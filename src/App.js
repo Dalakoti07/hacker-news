@@ -74,6 +74,7 @@ class App extends Component {
     this.setState({ searchTerm: event.target.value });
     if(event.target.value.length ===0 ){
       this.setState({result : null})
+      return
     }
     this.fetchSearchTopStories(this.state.searchTerm);
   }
@@ -115,7 +116,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
